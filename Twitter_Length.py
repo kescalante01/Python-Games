@@ -8,15 +8,13 @@ tweet_length = len(tweet)
 
 print("Good Tweet! It's length is", tweet_length, ". Good job.")
 
-# Was that tweet more than 140 characters?
-#   If so, tell the user it was too long!
-# Was that tweet 140 or fewer characters?
-#   If so, tell the user how witty they are!
+difference = abs(140 - tweet_length)
 
 if tweet_length >= 140:
-    print("It's too long!")
+    print("It's too long! Trim in order to meet the 140 characters", "remove" ,difference)
 elif tweet_length <= 140:
-    print("You are witty!")
+    print("You are witty! You have", difference, "characters remaining")
+
 
 # Part two:
 # Adjust the program to say how many characters you have remaining to use, or how many you need to trim by in order to meet the 140 character limit
