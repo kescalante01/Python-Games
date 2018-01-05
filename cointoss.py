@@ -9,5 +9,5 @@ while True:
         cointoss = coin[random.randint(0, 1)]
         print(cointoss)
     else:
-        print('Thanks for playing!')
+        print('Thanks for playing this game!')
         exit()
