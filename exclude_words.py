@@ -16,3 +16,4 @@ words_to_exclude = {'a', 'or', 'the', 'of', 'it', 'is', 'it', 'and', 'in', 'she'
 important = Counter(word for word in text if word not in words_to_exclude)
 print(important)
 print(Counter(important.most_common(6)))
+#a change
